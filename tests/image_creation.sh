@@ -334,9 +334,6 @@ test_centos()
 test_euleros()
 {
 	local -r name="Can create and run euleros image"
-
-	[ "$TRAVIS" = true ] && skip="travis timeout, see: https://github.com/kata-containers/osbuilder/issues/46"
-
 	run_test "${name}" "$skip" "euleros" "service" "no"
 }
 
